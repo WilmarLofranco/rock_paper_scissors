@@ -47,7 +47,10 @@ function playRound (humanChoice, computerChoice) {
         console.log("You win! Rock beats scissors!")
         humanScore++
     } else if (computerChoice === humanChoice) {
-        console.log("Draw! You have the same choice with the computer!")}
+        console.log("Draw! You have the same choice with the computer!")
+    } else {
+        console.log("You have entered an invalid input!");
+        computerScore++};
     console.log("Human Score:", humanScore);
     console.log("Computer Score:", computerScore);
 }
@@ -61,24 +64,24 @@ function playGame () {
     console.log("Round 1!");
     playRound (humanChoice, computerChoice);
     
-    console.log("Round 2!");
     let humChoice2 = getHumanChoice();
     let comChoice2 = getComputerChoice();
+    console.log("Round 2!");
     playRound (humChoice2, comChoice2);
-
-    console.log("Round 3!");
+    
     let humChoice3 = getHumanChoice();
     let comChoice3 = getComputerChoice();
+    console.log("Round 3!");
     playRound (humChoice3, comChoice3);
 
-    console.log("Round 4!");
     let humChoice4 = getHumanChoice();
     let comChoice4 = getComputerChoice();
+    console.log("Round 4!");
     playRound (humChoice4, comChoice4);
-
-    console.log("Round 5!");
+    
     let humChoice5 = getHumanChoice();
     let comChoice5 = getComputerChoice();
+    console.log("Round 5!");
     playRound (humChoice5, comChoice5);
 
     if (humanScore > computerScore) {
