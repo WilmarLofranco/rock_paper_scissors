@@ -1,0 +1,56 @@
+/* Reset some basic styles */
+body, h1, h3, h4, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body to use Flexbox for centering */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Optional: background color for better visibility */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Style the container that holds all elements */
+.container {
+    text-align: center;
+}
+
+/* Style individual elements */
+h1, h3, h4, p, .choices, .score, #reset {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    width: 500px;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: #45a049;
+}
